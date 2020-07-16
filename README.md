@@ -22,4 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# web_app.github.io
+# duel_friends.github.io
