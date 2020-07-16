@@ -1,0 +1,196 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.post_index_form{
+    padding: 20px 0 100px 0;
+    min-height: 100%;
+    height: auto;
+    width:100%;
+    text-align: center;
+    background-color:rgba(139, 236, 139,0.6);
+    position: relative;
+}
+
+.post_index_container{
+    font-size: 10px;
+    max-width:700px;
+    margin:0 auto;
+    box-shadow:0 2px 6px grey;
+}
+
+.post_content{
+    overflow: hidden;
+    border:1px solid grey;
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+@media screen and (max-width:819px){
+    .post_content{
+        max-height: 300px;
+    }
+}
+
+.post_content_left{
+    width:10%;
+    float: left;
+    margin-right: 10px;
+}
+
+.post_content_left img{
+    height:60px;
+    width:60px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.post_content_right{
+    width: 90%;
+    text-align: left;
+}
+
+@media screen and (max-width:819px){
+    .post_content_left img{
+        height:40px;
+        width:40px;
+        border-radius: 20px;
+    }
+}
+
+
+
+.post_user_name{
+    font-weight: bold;
+}
+
+.post_user_name a:hover{
+    color: rgb(62, 187, 62);
+}
+
+
+/* post.new */
+.post_new_container{
+    max-width:700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.post_new_content{
+    border:1px solid gray;
+    background-color: blanchedalmond;
+    padding:20px;
+    box-shadow:0 2px 6px grey;
+}
+
+.post_new_content textarea{
+    font-size: 24px;
+  padding: 10px;
+  width: 90%;
+  min-height: 300px;
+  border: 1px solid rgb(216, 218, 223);
+  resize: none;
+}
+
+.post_new_content input{
+    margin:20px;
+}
+
+.submit{
+    padding:10px 20px;
+    background-color: rgba(139, 236, 139,0.6);
+}
+
+/*いいねボタン*/
+.like-btn-unlike{
+    color: grey;
+}
+
+.like-btn{
+    color: hotpink;
+}
+
+.post_content_under a{
+    margin-left: 20px;
+}
+
+/*投稿画像*/
+.post_image{
+    width:90%;
+    max-height:400px;
+    object-fit: cover;
+}
+
+/*画像拡大*/
+.big_post_image{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.big_post_image img{
+    height: 50%;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.big_post_image i{
+    position: fixed;
+    top:15%;
+    left: 75%;
+}
+
+/*範囲はヘッダーはみ出し防止*/
+@media screen and (min-width:820px) and (max-width:1400px){
+    .big_post_image img{
+        max-height: 70%;
+    height: auto;
+    width: 70%;
+    top:20%;
+    
+    };
+    .big_post_image i{
+        top:15%;
+        left: 85%;
+    };
+}
+
+@media screen and (min-width:451px) and (max-width:819px){
+    .big_post_image img{
+    max-height: 70%;
+    height: auto;
+    width: 50%;
+    top:15%;
+    
+    };
+    .big_post_image i{
+        top:10%;
+        left: 75%;
+    };
+}
+
+@media screen and (max-width:450px){
+    .big_post_image img{
+    max-height: 70%;
+    height: auto;
+    width: 90%;
+    top:30%;
+    };
+    .big_post_image i{
+        top:25%;
+        left: 92%;
+    };
+}
+
+
+.fa-times{
+    color:white;
+}

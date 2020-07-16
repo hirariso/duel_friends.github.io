@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ * {
+    box-sizing: border-box;
+  }
+ html, body { height: 100%; }
+ html, body { margin:0;padding:0; }
+
+ h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+ header{
+     height: 80px;
+     background-color: rgb(170, 63, 63);
+     width: 100%;
+     margin-top: -20px;
+     line-height: 80px;
+     border-bottom:8px solid rgb(170, 63, 63);
+     position: relative;
+     top:0;
+     z-index:9;
+ }
+
+ header li{
+     list-style: none;
+     float: left;
+     margin-right: 30px;
+ }
+
+ header a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+ header li:hover{
+     background-color: rgba(255,255,255,0.2);
+     opacity: 0.8;
+ }
+
+
+ a {
+    text-decoration: none;
+    color: #2d3133;
+    font-size: 14px;
+  }
+
+.error_message{
+    color:red;
+}
+
+
+
+
+.message{
+    clear: both;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgb(145, 224, 255);
+    height: 60px;
+    width: 100%;
+    color:rgb(129, 4, 4);
+    font-size: 30px;
+}
+
+/*faクラスのインラインブロックが効いているため反応していない*/
+.menu-icon {
+    /* displayをnoneに指定してください */
+    display:none;
+    font-size: 40px;
+    padding: 21px 30px;
+    line-height: 50px;
+    color: white;
+    margin-left: -30px;
+  }
+
+@media screen and (max-width: 1400px) {
+    .menu-icon{
+        display:block;
+    }
+    header li{
+        display: none;
+    }
+}
+
+
+/*メニュー一覧*/
+.menu-page{
+    height: auto;
+    width: 400px;
+    background-color: rgb(27, 27, 27);
+    display: none;
+    position: absolute;
+    top: 75px;
+    z-index: 10;
+}
+
+.menu-page li{
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.menu-page a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}

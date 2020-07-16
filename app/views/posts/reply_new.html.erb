@@ -1,0 +1,22 @@
+<div class="post_index_form">
+    <div class="post_new_container">
+    <h1>返信フォーム</h1>
+    <%= form_tag("/posts/#{@post.reply_id}/reply_create",{multipart: true})do %>
+        <div class="post_new_content">
+        <div class="error_message">
+        <% if @error_message%>
+        <%= @error_message%>
+        <%end%>
+        </div>
+        
+        <textarea name="content">
+        @<%= @post.user.name %>
+        </textarea>
+        <p>画像：
+        <input name="image" type="file">
+        </p>
+        <input type="submit" value="返信" class="submit">
+        </div>
+    <% end %>
+    </div>
+</div>
