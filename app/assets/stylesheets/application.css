@@ -25,11 +25,11 @@
 
  header{
      height: 80px;
-     background-color: rgb(170, 63, 63);
+     background-color: rgb(17, 53, 3);
      width: 100%;
      margin-top: -20px;
      line-height: 80px;
-     border-bottom:8px solid rgb(170, 63, 63);
+     border-bottom:8px solid rgb(17, 53, 3);
      position: relative;
      top:0;
      z-index:9;
