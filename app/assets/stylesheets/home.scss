@@ -1,36 +1,36 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.home_page{
+.home_page {
     min-height: 100%;
-    width:100%;
+    width: 100%;
     background-size: cover;
     position: absolute;
     z-index: 1;
 }
 
-.home_container{
+.home_container {
     padding-top: 60px;
     text-align: center;
 }
 
-.home_container input{
+.home_container input {
     margin-bottom: 20px;
-    padding:10px;
-    font-size:20px;
+    padding: 10px;
+    font-size: 20px;
 }
 
-.home_container h1{
+.home_container h1 {
     margin-bottom: 20px;
 }
 
-.btn{
+.btn {
     border-radius: 20px;
-    background-color:  rgb(151, 238, 151);
+    background-color: rgb(151, 238, 151);
 }
 
-@media screen and (max-width:820px){
-    .home_container h1{
+@media screen and (max-width:820px) {
+    .home_container h1 {
         font-size: 25px;
     }
 }

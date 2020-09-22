@@ -13,93 +13,110 @@
  *= require_tree .
  *= require_self
  */
- * {
+* {
     box-sizing: border-box;
-  }
- html, body { height: 100%; }
- html, body { margin:0;padding:0; }
+}
 
- h1, h2, h3, h4, h5, h6, p {
+html,
+body {
+    height: 100%;
+}
+
+html,
+body {
     margin: 0;
-  }
+    padding: 0;
+}
 
- header{
-     height: 80px;
-     background-color: rgb(17, 53, 3);
-     width: 100%;
-     margin-top: -20px;
-     line-height: 80px;
-     border-bottom:8px solid rgb(17, 53, 3);
-     position: relative;
-     top:0;
-     z-index:9;
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
 
- header li{
-     list-style: none;
-     float: left;
-     margin-right: 30px;
- }
+header {
+    height: 80px;
+    background-color: rgb(17, 53, 3);
+    width: 100%;
+    margin-top: -20px;
+    line-height: 80px;
+    border-bottom: 8px solid rgb(17, 53, 3);
+    position: relative;
+    top: 0;
+    z-index: 9;
+}
 
- header a{
+
+header li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+}
+
+header a {
     color: white;
     text-decoration: none;
     padding: 20px;
 }
 
- header li:hover{
-     background-color: rgba(255,255,255,0.2);
-     opacity: 0.8;
- }
+header li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.8;
+}
 
 
- a {
+a {
     text-decoration: none;
     color: #2d3133;
     font-size: 14px;
-  }
+}
 
-.error_message{
-    color:red;
+.error_message {
+    color: red;
 }
 
 
 
 
-.message{
+.message {
     clear: both;
     text-align: center;
     line-height: 60px;
     background-color: rgb(145, 224, 255);
     height: 60px;
     width: 100%;
-    color:rgb(129, 4, 4);
+    color: rgb(129, 4, 4);
     font-size: 30px;
 }
 
 /*faクラスのインラインブロックが効いているため反応していない*/
 .menu-icon {
     /* displayをnoneに指定してください */
-    display:none;
+    display: none;
     font-size: 40px;
     padding: 21px 30px;
     line-height: 50px;
     color: white;
     margin-left: -30px;
-  }
+}
 
 @media screen and (max-width: 1400px) {
-    .menu-icon{
-        display:block;
+    .menu-icon {
+        display: block;
     }
-    header li{
+
+    header li {
         display: none;
     }
 }
 
 
 /*メニュー一覧*/
-.menu-page{
+.menu-page {
     height: auto;
     width: 400px;
     background-color: rgb(27, 27, 27);
@@ -109,12 +126,12 @@
     z-index: 10;
 }
 
-.menu-page li{
+.menu-page li {
     list-style: none;
     border-bottom: 1px solid white;
 }
 
-.menu-page a{
+.menu-page a {
     color: rgb(255, 255, 255);
     font-size: 30px;
 }

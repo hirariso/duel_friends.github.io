@@ -1,98 +1,100 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.btn:hover{
+.btn:hover {
     cursor: pointer;
 }
 
-.user_show_page{
+.user_show_page {
     min-height: 100%;
-    width:100%;
+    width: 100%;
     padding-top: 60px;
-    background-color:rgba(139, 236, 139,0.6);
+    background-color: rgba(139, 236, 139, 0.6);
 }
 
-.user_show_container{
-    max-width:700px;
+.user_show_container {
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
 
 
-.user_content img{
+.user_content img {
     height: 100px;
-    width:  100px;
+    width: 100px;
     border-radius: 50px;
     object-fit: cover;
 }
 
-.user_name{
+.user_name {
     font-size: 40px;
 }
 
-.user_content a{
+.user_content a {
     font-size: 20px;
     color: rgb(0, 224, 30);
     border: 1px solid gray;
-    padding:10px;
+    padding: 10px;
     background-color: white;
     border-radius: 10px;
 }
 
-@media screen and (max-width:820px){
-    .user_content a{
+@media screen and (max-width:820px) {
+    .user_content a {
         font-size: 18px;
-        padding:5px;
+        padding: 5px;
         border-radius: 5px;
     }
 }
 
-.user_posts{
+.user_posts {
     margin-top: 40px;
 }
 
-.edit_container{
+.edit_container {
     font-size: 10px;
-    max-width:700px;
-    margin:0 auto;
-    box-shadow:0 2px 6px grey;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px grey;
 }
 
-.edit_content{
+.edit_content {
     overflow: hidden;
-    border:1px solid grey;
+    border: 1px solid grey;
     background-color: blanchedalmond;
     padding: 15px;
 }
 
-.edit_content input{
-    margin:10px;
+.edit_content input {
+    margin: 10px;
 }
 
 /*show*/
 
-.profile_content{
+.profile_content {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.post_change_btn{
+.post_change_btn {
     float: left;
 }
 
-@media screen and (max-width:820px){
-    .user_content p{
+@media screen and (max-width:820px) {
+    .user_content p {
         font-size: 15px;
-    };
+    }
+
+    ;
 }
 
 
 
 /*search*/
-.user_search_form{
+.user_search_form {
     margin-bottom: 20px;
 }
 
-.search_user_profile{
+.search_user_profile {
     font-size: 15px;
 }
