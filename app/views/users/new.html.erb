@@ -2,9 +2,9 @@
     <div class="home_container">
         <h1>ユーザー登録</h1>
         <div class="error_message">
-        <% if @error_message%>
-        <%= @error_message%>
-        <%end%>
+            <% if @error_message%>
+            <%= @error_message%>
+            <%end%>
         </div>
         <%=form_tag("/users/create")do %>
         <input name="name" value="<%=params[:name]%>" placeholder="ハンドルネーム">

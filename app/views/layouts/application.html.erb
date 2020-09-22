@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SampleApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
-    
-  </head>
 
-  <body>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SampleApp</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+</head>
+
+<body>
   <header>
     <ul>
       <% if session[:user_id]==nil %>
@@ -35,15 +36,15 @@
       <span class="fa fa-bars menu-icon"></span>
     </ul>
   </header>
-    <% if flash[:notice]%>
-    <div class="message">
-      <%= flash[:notice] %>
-    </div>
-    <% end %>
+  <% if flash[:notice]%>
+  <div class="message">
+    <%= flash[:notice] %>
+  </div>
+  <% end %>
 
-    
-    <div class="menu-page">
-      <ul>
+
+  <div class="menu-page">
+    <ul>
       <% if session[:user_id]==nil %>
       <li><%=link_to("ホーム","/")%></li>
       <li><%=link_to("デュエプレ広場とは","/about")%></li>
@@ -63,9 +64,10 @@
       <li><%=link_to("ログアウト","/logout",{method: "posr"})%></li>
       <%end%>
     </ul>
-    </div>
-    
-    <%= yield %>
-    
-  </body>
+  </div>
+
+  <%= yield %>
+
+</body>
+
 </html>

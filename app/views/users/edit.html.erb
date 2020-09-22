@@ -1,28 +1,28 @@
 <div class="post_index_form">
-<h1>ユーザー編集</h1>
-<div class="edit_container">
-<div class="edit_content">
- <div class="error_message">
-        <% if @error_message%>
-        <%= @error_message%>
-        <%end%>
-        </div>
-    <%= form_tag("/users/#{@user.id}/update",{multipart: true})do %>
-        <p>ユーザー名：
-        <input name="name" value="<%= @user.name %>">
-        </p>
-        <p>画像：
-        <input name="image" type="file" value="<%= @user.image_name%>">
-        </p>
-        <p>ID：
-        <input name="duel_id" value="<%= @user.duel_id %>">
-        </p>
-        <p>プロフィール：
-        <textarea name="profile"><%= @user.profile%>
+    <h1>ユーザー編集</h1>
+    <div class="edit_container">
+        <div class="edit_content">
+            <div class="error_message">
+                <% if @error_message%>
+                <%= @error_message%>
+                <%end%>
+            </div>
+            <%= form_tag("/users/#{@user.id}/update",{multipart: true})do %>
+            <p>ユーザー名：
+                <input name="name" value="<%= @user.name %>">
+            </p>
+            <p>画像：
+                <input name="image" type="file" value="<%= @user.image_name%>">
+            </p>
+            <p>ID：
+                <input name="duel_id" value="<%= @user.duel_id %>">
+            </p>
+            <p>プロフィール：
+                <textarea name="profile"><%= @user.profile%>
         </textarea>
-        </p>
-        <input type="submit" value="保存">
-    <%end%>
-</div>
-</div>
+            </p>
+            <input type="submit" value="保存">
+            <%end%>
+        </div>
+    </div>
 </div>

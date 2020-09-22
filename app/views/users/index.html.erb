@@ -1,31 +1,31 @@
 <div class="post_index_form">
     <div class="user_search_form">
-<p>検索</p>
-<%= form_tag("/users/index",{method: "get"})do %>
-    <%= text_field_tag :search %>
-    <%= submit_tag 'Search',:name=>nil %>
-<%end%>
+        <p>検索</p>
+        <%= form_tag("/users/index",{method: "get"})do %>
+        <%= text_field_tag :search %>
+        <%= submit_tag 'Search',:name=>nil %>
+        <%end%>
     </div>
-<div class="post_index_container">
-<% @users.each do |user| %>
-            <div class="post_content">
-                <div class="post_content_left">
-                    <img src="<%="/user_images/#{user.image_name}"%>">
-                </div>
-                <div class="post_content_right">
-                    <div class="post_user_name">
+    <div class="post_index_container">
+        <% @users.each do |user| %>
+        <div class="post_content">
+            <div class="post_content_left">
+                <img src="<%="/user_images/#{user.image_name}"%>">
+            </div>
+            <div class="post_content_right">
+                <div class="post_user_name">
                     <%= link_to(user.name,"/users/#{user.id}")%>
                     <% if user.duel_id !="" %>
-                        ID:<%= user.duel_id %>
+                    ID:<%= user.duel_id %>
                     <%end%>
-                    </div>
-                    <div class="search_user_profile">
+                </div>
+                <div class="search_user_profile">
                     <%if user.profile !="" %>
-                        <%= user.profile%>
+                    <%= user.profile%>
                     <%end%>
-                    </div>
                 </div>
             </div>
-            <%end%>
+        </div>
+        <%end%>
     </div>
 </div>

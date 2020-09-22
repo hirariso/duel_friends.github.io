@@ -11,35 +11,35 @@
                 <%= link_to(@post.content,"/posts/#{@post.id}") %>
             </div>
             <% if @post.image_name %>
-                <img src="<%="/post_images/#{@post.image_name}"%>" class="post_image">
+            <img src="<%="/post_images/#{@post.image_name}"%>" class="post_image">
             <%end%>
             <div class="post_content_under">
-            <%= link_to("/posts/#{@post.id}/reply_new")do %>
-            <i class="fa fa-comment">返信</i>
-            <%end%>
-            <% if Like.find_by(post_id: @post,user_id: @current_user.id) %>
+                <%= link_to("/posts/#{@post.id}/reply_new")do %>
+                <i class="fa fa-comment">返信</i>
+                <%end%>
+                <% if Like.find_by(post_id: @post,user_id: @current_user.id) %>
                 <%= link_to("/likes/#{@post.id}/destroy",{method: "post"})do %>
                 <span class="fa fa-heart like-btn"></span>
                 <%end%>
-            <% else %>
+                <% else %>
                 <%= link_to("/likes/#{@post.id}/create",{method: "post"})do %>
                 <span class="fa fa-heart like-btn-unlike"></span>
                 <%end%>
-            <%end%>
-            <%= @likes_count %>
-            <% if @current_user.id==@post.user.id%>
+                <%end%>
+                <%= @likes_count %>
+                <% if @current_user.id==@post.user.id%>
                 <%= link_to("編集","/posts/#{@post.id}/edit") %>
                 <%= link_to("削除","/posts/#{@post.id}/destroy",{method: "post"}) %>
-            <%end%>
+                <%end%>
             </div>
         </div>
         <div class="big_post_image">
-                    <div class="big_image_container">
-                        <img src="" class="big_image">
-                    </div>
-                        <div class="close-modal">
-                            <i class="fa fa-2x fa-times"></i>
-                        </div>
-                    </div>
+            <div class="big_image_container">
+                <img src="" class="big_image">
+            </div>
+            <div class="close-modal">
+                <i class="fa fa-2x fa-times"></i>
+            </div>
+        </div>
     </div>
 </div>

@@ -3,39 +3,39 @@
         <div class="user_content">
             <img src="<%="/user_images/#{@user.image_name}"%>">
             <p class="user_name"><%= @user.name %></p>
-                <div class="profile_content">
-                    <%if @user.duel_id!="" %>
-                        <p>ID：<%= @user.duel_id%></p>
-                    <%end%>
-                    <%if @user.profile!="" %>
-                        <p>プロフィール：<%= @user.profile%></p>
-                    <%end%>
-                </div>
+            <div class="profile_content">
+                <%if @user.duel_id!="" %>
+                <p>ID：<%= @user.duel_id%></p>
+                <%end%>
+                <%if @user.profile!="" %>
+                <p>プロフィール：<%= @user.profile%></p>
+                <%end%>
+            </div>
             <div class="user_change_btn">
-            <%if @current_user.id==@user.id%>
+                <%if @current_user.id==@user.id%>
                 <%= link_to("変更","/users/#{@user.id}/edit") %>
-            <%end%>
+                <%end%>
             </div>
             <div class="post_change_btn">
-            <%= link_to("投稿","/users/#{@user.id}") %>
-            <%= link_to("いいね一覧","/users/#{@user.id}/likes") %>
+                <%= link_to("投稿","/users/#{@user.id}") %>
+                <%= link_to("いいね一覧","/users/#{@user.id}/likes") %>
             </div>
         </div>
 
         <div class="user_posts">
-        <% @posts.each do |post| %>
+            <% @posts.each do |post| %>
             <div class="post_content">
                 <div class="post_content_left">
                     <img src="<%="/user_images/#{post.user.image_name}"%>">
                 </div>
                 <div class="post_content_right">
                     <div class="post_user_name">
-                    <%= link_to(post.user.name,"/users/#{post.user.id}")%>
+                        <%= link_to(post.user.name,"/users/#{post.user.id}")%>
                     </div>
                     <%= link_to(post.content,"/posts/#{post.id}") %>
                 </div>
                 <% if post.image_name %>
-                    <img src="<%="/post_images/#{post.image_name}"%>" class="post_image">
+                <img src="<%="/post_images/#{post.image_name}"%>" class="post_image">
                 <%end%>
             </div>
             <%end%>
@@ -43,9 +43,9 @@
 
         <div class="big_post_image">
             <img src="" class="big_image">
-                <div class="close-modal">
-                    <i class="fa fa-2x fa-times"></i>
-                </div>
+            <div class="close-modal">
+                <i class="fa fa-2x fa-times"></i>
+            </div>
         </div>
     </div>
 </div>
