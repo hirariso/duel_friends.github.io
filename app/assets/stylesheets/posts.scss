@@ -18,10 +18,14 @@
     box-shadow:0 2px 6px grey;
 }
 
+.post_content img:hover{
+    cursor: pointer;
+}
+
 .post_content{
     overflow: hidden;
     border:1px solid grey;
-    background-color: blanchedalmond;
+    background-color: seashell;
     padding: 10px;
 }
 
@@ -146,6 +150,10 @@
     position: fixed;
     top:15%;
     left: 75%;
+}
+
+.close-modal:hover{
+    cursor: pointer;
 }
 
 /*範囲はヘッダーはみ出し防止*/
