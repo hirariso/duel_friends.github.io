@@ -3,22 +3,21 @@
         <% @posts.each do |post| %>
         <div class="post_content">
             <div class="post_content_left">
-                <img src="<%="/user_images/#{post.user.image_name}"%>">
+                <%= link_to image_tag("/user_images/#{post.user.image_name}"), "/users/#{post.user.id}" %>
             </div>
             <div class="post_content_right">
                 <div class="post_user_name">
                     <%= link_to(post.user.name,"/users/#{post.user.id}")%>
                 </div>
-                <%= link_to(post.content,"/posts/#{post.id}") %>
+                <div class="post_text">
+                    <%= link_to(post.content,"/posts/#{post.id}") %>
+                </div>
             </div>
             <% if post.image_name %>
-
             <img src="<%="/post_images/#{post.image_name}"%>" class="post_image">
-
             <%end%>
         </div>
         <%end%>
-
         <div class="big_post_image">
             <img src="" class="big_image">
             <div class="close-modal">

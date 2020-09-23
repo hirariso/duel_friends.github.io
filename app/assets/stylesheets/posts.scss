@@ -29,11 +29,11 @@
     padding: 10px;
 }
 
-@media screen and (max-width:819px) {
+/*@media screen and (max-width:819px) {
     .post_content {
         max-height: 300px;
     }
-}
+}*/
 
 .post_content_left {
     width: 10%;
@@ -61,8 +61,6 @@
     }
 }
 
-
-
 .post_user_name {
     font-weight: bold;
 }
@@ -70,7 +68,6 @@
 .post_user_name a:hover {
     color: rgb(62, 187, 62);
 }
-
 
 /* post.new */
 .post_new_container {
