@@ -25,7 +25,7 @@
         <div class="user_posts">
             <% if @likes %>
             <% @likes.each do |like| %>
-            <%post=Post.find_by(id: like.post_id)%>
+            <% post=Post.find_by(id:like.post_id) %>
             <div class="post_content">
                 <div class="post_content_left">
                     <img src="<%="/user_images/#{post.user.image_name}"%>">
