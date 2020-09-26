@@ -20,13 +20,14 @@
     font-size: 20px;
 }
 
-.home_container h1 {
+.home_container h1,
+.home_container p {
     margin-bottom: 20px;
 }
 
 .home_container img {
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    height: auto;
 }
 
 .btn {
