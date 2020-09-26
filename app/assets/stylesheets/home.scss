@@ -20,12 +20,16 @@
     font-size: 20px;
 }
 
-.home_container h1,
-.home_container p {
+.home_container h1 {
     margin-bottom: 20px;
 }
 
+.home_container p {
+    margin-bottom: 50px;
+}
+
 .home_container img {
+    display: none;
     width: 80%;
     height: auto;
 }
