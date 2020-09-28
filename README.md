@@ -1,25 +1,17 @@
-# README
+# リポジトリ名
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+デュエルマスターズプレイス交流掲示板
 
-Things you may want to cover:
 
-* Ruby version
+## 使い方
 
-* System dependencies
+1. ヘッダーにある”ユーザー登録”をクリック
+2. ユーザーを作成します。ユーザー名とパスワードを入力してください。（※両方１文字以上）
+3. 投稿するのもよし、投稿を眺めるのもよし。Twitterと同じ要領で楽しんでください。
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+## 参考文献
+Twitter(https://twitter.com/?lang=ja)
+Instagram(https://www.instagram.com/?hl=ja)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# duel_friends.github.io
