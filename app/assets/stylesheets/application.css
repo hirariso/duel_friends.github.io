@@ -95,13 +95,16 @@ a {
 
 /*faクラスのインラインブロックが効いているため反応していない*/
 .menu-icon {
-    /* displayをnoneに指定してください */
     display: none;
     font-size: 40px;
     padding: 21px 30px;
     line-height: 50px;
     color: white;
     margin-left: -30px;
+}
+
+.menu-icon {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1400px) {

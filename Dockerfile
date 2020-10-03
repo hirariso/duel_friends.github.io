@@ -1,5 +1,5 @@
 FROM ruby:2.7.1
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client yarn chromium-driver 
+RUN apt-get update -qq && apt-get install -y nodejs sqlite-client yarn chromium-driver 
 # yarnとchromium-driverを追記
 RUN mkdir /sample_app
 WORKDIR /sample_app
