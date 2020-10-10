@@ -21,7 +21,6 @@
                 <%= link_to("いいね一覧","/users/#{@user.id}/likes") %>
             </div>
         </div>
-
         <div class="user_posts">
             <% @posts.each do |post| %>
             <div class="post_content">
@@ -40,7 +39,6 @@
             </div>
             <%end%>
         </div>
-
         <div class="big_post_image">
             <img src="" class="big_image">
             <div class="close-modal">
