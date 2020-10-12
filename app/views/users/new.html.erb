@@ -5,6 +5,7 @@
             <% if @error_message%>
             <%= @error_message%>
             <%end%>
+
         </div>
         <%=form_tag("/users/create")do %>
         <input name="name" value="<%=params[:name]%>" placeholder="ハンドルネーム">
